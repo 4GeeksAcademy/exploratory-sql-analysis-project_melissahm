@@ -78,6 +78,7 @@ ON observations.species_id=species.id; -- left join con species_id =id de specie
 --pregunta 12
 SELECT species.common_name, regions.name,COUNT (*)
 FROM observations
+--dos join para relacionar tablas species y regions a observations
 LEFT JOIN species
 ON observations.species_id=species.id
 LEFT JOIN regions
