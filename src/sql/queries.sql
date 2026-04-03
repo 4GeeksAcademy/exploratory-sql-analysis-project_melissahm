@@ -87,3 +87,7 @@ GROUP BY regions.name, species.common_name
 ORDER BY regions.name, COUNT(*) DESC;
 
 --NIVEL 4
+INSERT INTO observations(species_id,region_id,
+ observer,observation_date,latitude,longitude,count)
+ VALUES(1,1,
+ "ficticio","2026-04-04","-1","-1",0);
